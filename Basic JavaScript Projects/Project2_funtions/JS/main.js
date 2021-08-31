@@ -20,3 +20,7 @@ function myConFunction2() {
     sent1 +="concatenate strings using the \"+=\" operator";
     document.getElementById("operatorAssignment").innerHTML=sent1;
 }
+
+
+  
+
