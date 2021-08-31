@@ -19,3 +19,7 @@ function My_First_Function() {  /*Defining a function and naming it -- Step 63 i
     var result=str.fontcolor("green"); //Using the fontcolor method on str variable
     document.getElementById("Green_Text").innerHTML=result; //Putting the value of result into HTML element with "Green_Text" id
 }
+function myBlurFunction() {
+    var n = document.getElementById("fname");
+    n.value = n.value.toUpperCase();
+}
