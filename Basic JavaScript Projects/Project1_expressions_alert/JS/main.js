@@ -1,5 +1,5 @@
 document.write("Hello, World!<br>");
-var X=(" This is a string variable assigned to variable X<br>");
+var X=(" This is a string variable assigned to variable X");
 document.write(X);
 window.alert(X);
 var Y=("This string deomonstrates it\'s usage of the backslash in order to be able to print out \', \", and \\<br>");
