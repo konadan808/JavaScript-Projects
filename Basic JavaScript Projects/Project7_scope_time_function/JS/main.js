@@ -33,3 +33,31 @@ function get_Date() {
 if (15 > 12) {
     document.write("15 is greater than 12");
 }
+
+// Else Assignment
+function Shot_First() {
+    var name=document.getElementById("name").value;
+    if (name == "Han") {
+        Answer= "You are correct, Han shot first!";
+    }
+    else {
+        Answer= "You are incorrect, Han shot first!";
+    }
+    document.getElementById("Who_Shot_First").innerHTML=Answer;
+}
+
+// Else If Assignment
+function Time_function() {
+    var Time=new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time >0) {
+        Reply="It is morning time!";
+    }
+    else if (Time >=12 == Time < 18){
+        Reply="It is the afternoon!";
+    }
+    else {
+        Reply="It is the evening time";
+    }
+    document.getElementById("Time_of_day").innerHTML=Reply;
+}
