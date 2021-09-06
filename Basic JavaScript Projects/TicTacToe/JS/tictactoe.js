@@ -81,7 +81,7 @@ function checkWinConditions() {
     // X 1, 4, 7 condition
     else if (arrayInclues("1X", "4X", "7X")) {drawWinLine (304, 50, 304, 558) }
     // X 2, 5, 8 condition
-    else if (arrayInclues("2X", "5X", "8X")) {drawWinLine (505, 50, 508, 558) }
+    else if (arrayInclues("2X", "5X", "8X")) {drawWinLine (508, 50, 508, 558) }
     // X 6, 4, 2 condition
     else if (arrayInclues("6X", "4X", "2X")) {drawWinLine (100, 508, 510, 90) }
     // X 0, 4, 8 condition
@@ -97,14 +97,14 @@ function checkWinConditions() {
     // O 1, 4, 7 condition
     else if (arrayInclues("1O", "4O", "7O")) {drawWinLine (304, 50, 304, 558) }
     // O 2, 5, 8 condition
-    else if (arrayInclues("2O", "5O", "8O")) {drawWinLine (505, 50, 508, 558) }
+    else if (arrayInclues("2O", "5O", "8O")) {drawWinLine (508, 50, 508, 558) }
     // O 6, 4, 2 condition
     else if (arrayInclues("6O", "4O", "2O")) {drawWinLine (100, 508, 510, 90) }
     // O 0, 4, 8 condition
     else if (arrayInclues("0O", "4O", "8O")) {drawWinLine (100, 100, 520, 520) }
     // This condition checks for a tie.  If none of the above conditions register and 9
     //         squares are selected the code executes.
-    else if (selectedSquares.length >=9) {
+    else if (selectedSquares.length >= 9) {
         // This function palys the tie game sound.
         audio("./Media/tie1.WAV");
         // This function sets a .3 second timer before the resetGame is called.
@@ -186,7 +186,7 @@ function animateLineDrawing() {
         // This condition adds 10 to the previous end y point.
         if (y < y2) {y += 10;}
         // This condition cancels our animation loop if we've reached the end points.
-        if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop);}
+        if (x >= x2 && y >= y2) {cancelAnimationFrame(animationLoop);}
     }
     // This condition is similar to the one above.
     // This is necessary for the 6, 4, 2 win condition
