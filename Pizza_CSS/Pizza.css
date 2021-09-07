@@ -1,0 +1,122 @@
+#menuBG {
+    width: 750px;
+    height: 600px;
+    margin: 10px auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#frmMenu {
+    width: 750px;
+    height: 200px;
+    margin-top: 30px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 220px;
+    height: 200px;
+    float: left;
+    border: outset 5px rgb(206, 153, 9);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left;
+    margin-right: 20px;
+    background: rgb(0, 139, 0);
+    background-image:linear-gradient(180deg, green, blue);
+}
+
+.right {
+    width: 220px;
+    height: 200px;
+    float: left;
+    border: outset 5px rgb(206, 153, 9);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left;
+    margin-left: 20px;
+    background-image:linear-gradient(180deg, green, blue);
+}
+/*  Remember for future center alignment, float: left; will center new divs, so long as the 
+    container is wide enough to accommodate the total number of px width i.e., frmMenu needed
+    to be changed from the original 400 to 600 px to account for an additional 200px that
+    came with the veggie menu*/
+.center {
+    margin: auto;
+    width: 220px;
+    height: 200px;
+    float: left;
+    border: inset 5px rgb(206, 153, 9);
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left;
+    background: rgb(250, 248, 248);
+    background-image:linear-gradient(60deg, green, blue);
+}
+
+#showText {
+    width: 200px;
+    height: auto;
+    margin: 0px auto;
+    float: left;    
+    background-color: rgb(168, 168, 167);
+}
+
+#totalPrice {
+    background-color: rgb(168, 168, 167);
+    width: 200px;
+    height: auto;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 600px;
+    height: 400px;
+}
+
+#btnOrder {
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+body {
+    background-image: url(../Images/Mahina.jpg);
+    background-size: cover;
+    
+}
+
+h1 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(247, 30, 30);
+text-align: center;
+font-size: 50px;
+background-image: url(../Images/World-Oceans-Month.jpg);
+background-size:cover;
+background-position:right center;
+border: 7px groove slateblue;
+}
+
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+color:rgb(233, 255, 37);
+text-align: center;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+}
+
+
