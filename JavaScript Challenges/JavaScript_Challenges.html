@@ -7,19 +7,22 @@
         <script src="./JavaScript_Challenges-1.js"></script>
     </head>
     <body>
-        <div id="form-Container">
+
+        <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <div class="form-popup" id="myForm">
             <h3>Contact Information</h3>
             <p>Please fill your information in below:</p>
-            <form id="contactForm">
+            <form action="" method="get" name="myForm" class="form-container" onsubmit="return validateForm()">
                 <label for="fName">First Name</label><br>
-                <input type="text" id="fName" placeholder="John"><br>
+                <input type="text" id="fName" name="fName" placeholder="John"><br>
                 <label for="lName">Last Name</label><br>
-                <input type="text" id="lName" placeholder="Doe"><br>
+                <input type="text" id="lName" name="lName" placeholder="Doe"><br>
                 <label for="phoneNumber">Phone Number</label><br>
-                <input type="tel" id="phoneNumber" placeholder="555-555-5556"><br>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="555-555-5556"><br>
                 <label for="eMail">E-mail Address</label><br>
-                <input type="email" id="eMail" placeholder="jonedoe@aol.com"><br>
-                <input type="submit" value="Submit">
+                <input type="email" id="eMail" name="eMail" placeholder="jonedoe@aol.com"><br>
+                <input type="submit" class="close-button" onclick="closeForm()">Submit</input>
             </form>
         </div>
 
