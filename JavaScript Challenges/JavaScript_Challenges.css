@@ -32,3 +32,16 @@
     border: 3px soild #f1f1f1;
     z-index: 9;
 }
+
+/* Animation Challenge: Step 396 */
+.racecar {
+    position: fixed;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(4000px)}
+}
