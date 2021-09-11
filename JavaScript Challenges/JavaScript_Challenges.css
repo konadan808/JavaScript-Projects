@@ -1,3 +1,4 @@
+/* Contact Popup Form with Verification Challenge: Step 394 */
 .open-button {
     background-color: #555;
     color: white;
@@ -39,9 +40,33 @@
     animation-name: drive;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+
 }
 
-@keyframes drive {
+@keyframes drive { 
     from{ transform: translateX(-100px)}
     to{ transform: translateX(4000px)}
 }
+
+/* CSS Zoom in & out Challenge:Step 397 */
+#zoomContainer {
+    position: relative;
+    margin-top: 110px;
+    margin-left: 500px;
+    transition: transform 300ms;
+    animation: zoominoutsinglefeatured 3s forwards;
+    cursor: zoom-in;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
