@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head Element -->
+    <head>
+        <title>Dan Seymour Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="./CSS/Portfolio.css">
+    </head>
+
+    <!-- Body -->
+
+    <body class="Background">
+
+        <!-- Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+            
+        <!--Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="background_Video">
+                <source src="Videos/Computer - 5074.mp4" type="video/mp4">
+                Your browser does not support HTML5 video
+            </video>
+        </div>
+            
+        <!--Video Text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Your Name's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such aboslute autority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br>-Joseph Weizenbaum<br>
+                    <br>
+                    My name is Dan Seymour.  Welcome to my portfolio website.  On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+        
+        <!-- Slide Show -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/Square Personal Photo.png" alt="Picture of yourself">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos">
+                        <div class="text">I'm a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/Python.png" alt="Python logo">
+                        <div class="text">the popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/C_Sharp_and_Dot_NET.png" alt="C# Logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./Images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
+                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between slideshow and dots -->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--About-->
+        <div class="Row" id="About">
+            <!-- Left Column -->
+            <div class="Column_2">
+                <img src="Images/Square Custom Picture.png" alt="Replace with a picture of your choosing">
+            </div>
+            <!-- Right Column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p> I am a software developer who loves to code!  As a person with a kid on the way, I enjoy time with my family and hanging at home.
+                    <br>
+                    <br>I am a current student of <a href="https://www.learncodeinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQU, Python, C# and more.
+                    <br>
+                    <br>I am a full-stack developer and woruld lvoe to work with you on your project. <a onclick="openForm()">Contact</a>me below!
+                </p>
+            </div>
+        </div>
+        <!-- Text to include somewhere on page
+                        I am an inspiring software developer who is eager to join the incredible industry that is technology.<br>
+                        I am currently enrolled in The Tech Academy in the Software Developer program.  Participating in the <br>
+                        course work that the program provides has been like nothing I've done before, and the passion in which <br>
+                        I am driven by is something I've never experienced before.  I have always admired what a powerful tool <br>
+                        a computer is and now I get to get behind the scenes and make use of such a powerful tool!  My studies <br>
+                        include HTML & CSS, JavaScript, SQL, C#, and more.  <br> <br>
+                        After I graduate, I will be a highly employable full-stack software developer with a solid work ethic and <br>
+                        a hunger to contribute to the wide world of Tech!
+        -->
+        <!-- GitHub Section-->
+        <div class="Row" id="gitHub">
+            <!-- Left Column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/konadan808" target="_blank">Dan Seymour's GitHub Page</a></p>
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="Column_2">
+                <a href="https://github.com/konadan808" target="_blank"><img src="./Images/GitHub.jpg" alt="GitHubLogo"></a>
+            </div>
+        </div>
+                
+            <!--Contact Section-->
+            <div id="Contact">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/f/mzbyybag" method="POST" class="form-container">
+                        <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Enter you phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter your email address here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Type your message here" name="message">
+
+                        <button type="submit" class="btn">Submit</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+            </div>
+                    
+            
+            <!--Footer Section-->
+            <footer>
+                <p class="center">This page was created by Dan Seymour</p>
+            </footer>
+            
+        <script src="./JS/PortFolio.js"></script>
+    </body>
+</html>
